@@ -106,11 +106,14 @@ calc_pi -p 1000000 --output-to pi.txt cbp
 | Chudnovsky | -       | -          | 5.1 ms     | 369.2 ms    | 38.22 s   | -          |
 | Chudnovsky Binary Splitting | - | - | 2.0 ms   | 23.5 ms     | 434.1 ms  | 7.9 s      |
 | Chudnovsky Binary Splitting Parallelized | - | - | - | 19.9 ms | 293.7 ms | 4.628 s   |
+|  |  |  |  |  |  |  |
+| [compute-pi](https://github.com/sekika/compute-pi) | - | - | 4.4 ms | 140.1 ms | 2.405 s | 41.752 s |
 
 | Algorithm | 100M digits |
 | --------- | ----------- |
 | Chudnovsky Binary Splitting | 109.58 s |
 | Chudnovsky Binary Splitting Parallelized | 48.739 s |
+|  |  |  |  |  |  |  |
 | [y-cruncher](https://www.numberworld.org/y-cruncher/) (single-thread) | 21.908 s |
 | [y-cruncher](https://www.numberworld.org/y-cruncher/) (multi-thread) | 5.354 s |
 
@@ -121,6 +124,7 @@ calc_pi -p 1000000 --output-to pi.txt cbp
 ## Reference
 - https://www.hvks.com/Numerical/Downloads/HVE%20Practical%20implementation%20of%20PI%20Algorithms.pdf
 - https://www.craig-wood.com/nick/articles/pi-chudnovsky
+- https://mathworld.wolfram.com/PiFormulas.html
 - https://github.com/Pencilcaseman/iron_pi
 - https://yamakuramun.info/2024/05/26/686/
 - https://qiita.com/yonaka15/items/992b3306106c150f36c6
