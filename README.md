@@ -24,12 +24,29 @@ Supported algorithms are listed as follows:
 
 ## Installation
 
-**Use in terminal**
+## From Release
+Available for Linux and Windows.
 ```bash
-cargo install calc_pi
+# Install cargo-binstall if you haven't already
+curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+
+# Use cargo binstall to install calc_pi
+cargo binstall calc_pi
 ```
 
-**Use in Python**
+**From Source**
+
+For Windows, please follow [BUILD_WIN.md](BUILD_WIN.md).
+```bash
+cargo install calc_pi
+# Or
+cargo install --git https://github.com/BreezeWhite/calc_pi/
+```
+
+
+**For Python**
+
+Available for Linux and Windows (python=3.12).
 ```bash
 pip install calc-pi
 ```
