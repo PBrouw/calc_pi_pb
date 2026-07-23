@@ -371,7 +371,7 @@ pub fn pi_chudnovsky_binary_splitting(start_idx: u64, end_idx: u64, prec: u32) -
 
 pub fn pi_chudnovsky_binary_splitting_parallel(start_idx: u64, end_idx: u64, prec: u32) -> Float {
     // Use half of the CPU cores to compute in parallel.
-    let thread_cnt = thread::available_parallelism().map(|n| n.get()).unwrap() / 2;
+    let thread_cnt = thread::available_parallelism().map(|n| n.get()).unwrap() ;
     let _ = rayon::ThreadPoolBuilder::new()
         .num_threads(thread_cnt)
         .build_global();

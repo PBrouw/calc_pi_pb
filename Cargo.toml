@@ -10,10 +10,10 @@ license = "Apache-2.0"
 keywords = ["pi", "cli", "rust", "benchmark", "python"]
 
 [dependencies]
-clap = { version = "4.5.40", features = ["derive"] }
-pyo3 = { version = "0.25.1", features = ["extension-module"], optional = true }
-rayon = "1.10.0"
-rug = "1.27.0"
+clap = { version = "4.6.4", features = ["derive"] }
+pyo3 = { version = "0.29.0", features = ["extension-module"], optional = true }
+rayon = "1.12.0"
+rug = "1.30.0"
 
 [features]
 py = ["pyo3"]
